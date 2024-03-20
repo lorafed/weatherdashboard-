@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Updated input field to reference the datalist -->
+        <input type="text" id="cityInput" list="searchDropdown" placeholder="Enter city name">
+        <datalist id="searchDropdown"></datalist>
+        <button onclick="getWeather()">Get Weather</button>
+        <div id="weatherData"></div>
+    </div>
+    <!-- Datalist element for search history suggestions -->
+    <datalist id="searchDropdown"></datalist>
+    <script src="script.js"></script>
+</body>
+</html>
